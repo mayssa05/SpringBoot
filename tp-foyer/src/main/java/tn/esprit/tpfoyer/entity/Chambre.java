@@ -22,7 +22,6 @@ public class Chambre {
     @Enumerated(EnumType.STRING)
     private TypeChambre typeC;
 
-
     @OneToMany(cascade = CascadeType.ALL)
     private Set<Reservation> reservations;
 

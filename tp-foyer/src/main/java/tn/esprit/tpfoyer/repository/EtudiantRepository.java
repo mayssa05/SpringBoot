@@ -1,4 +1,9 @@
 package tn.esprit.tpfoyer.repository;
 
-public interface EtudiantRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+import tn.esprit.tpfoyer.entity.Etudiant;
+
+@Repository
+public interface EtudiantRepository extends JpaRepository<Etudiant,Long> {
 }

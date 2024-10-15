@@ -13,7 +13,7 @@ import java.util.Set;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-@FieldDefaults(level = AccessLevel.PRIVATE)
+//@FieldDefaults(level = AccessLevel.PRIVATE)
 public class Bloc {
 
     @Id
@@ -22,7 +22,7 @@ public class Bloc {
 
     private String nomBloc;
     private Long capaciteBloc;
-   private Object Accesslevel;
+   //private Object Accesslevel;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy="bloc")
     private Set<Chambre> chambres;
